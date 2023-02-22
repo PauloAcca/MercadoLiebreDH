@@ -1,0 +1,170 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --amarillo-fondo: #EAC926;
+    --azul-oscuro: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde-fuerte: #39b54a;
+}
+html{
+    background-color: var(--gris-claro);
+}
+/* ------------- HEADER */
+header{
+    background-color: #EAC926;
+    padding-bottom: 25px;
+}
+.LogoML{
+    width: 48%;
+    margin-left: 1rem;
+}
+.buscador{
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 100%;
+    height: 1.5rem;
+    border: 0;
+}
+.formBusqueda{
+    display: inline;
+}
+.Lupa{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.buscadorConLupa{
+    background-color: white;
+    width: 45%;
+    height: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+.cuotas{
+    display:inline-block;
+    margin-top: 2rem;
+}
+.manoDinero-Compra-en-Cuotas{
+    
+    text-align: center;
+}
+.container-listas{
+    display: flex;
+    justify-content: space-between;
+}
+.listas li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+.listas{
+    list-style: none;
+    display: flex;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #1259c3;;
+    color: white;
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------------ MAIN */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputText{
+    width: 90%;
+    max-width: 1091px;
+    margin: 0.7rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.botonEnviar{
+    width: 90%;
+    max-width: 1091px;
+    margin: 0.7rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--azul-oscuro);
+    color: var(--gris-claro);
+}
+.botonEnviar:hover{
+    background-color: #0022AA;
+}
+
+
+/* --------------------------- FOOTER */
+footer{
+    background-color: white;
+    padding-bottom: 1px ;
+    height: 100vh;
+}
+.container-footer{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px ;
+}
+.tarjet-footer{
+    text-align: center;
+}
+.iconos-footer{
+    font-size: 30px;
+    color: #1259c3;
+}
+.copyright{
+    font-size: 10px;
+    text-align: left;
+}
+
+/* ----------------- CELULARES */
+
+@media(max-width: 361px){
+    .listas{
+        display: none;
+    }
+    .imgPerfil{
+        margin: 1rem auto 1rem auto;
+    }
+}
+
+
+/* ----------------------- TABLETS */
+
+@media(min-width: 361px){
+    .burger-menu{
+        display: none;
+    }
+}
+
+
+/* ----------------------- COMPUTADORAS */
+
+@media(min-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+    .container-footer{
+        display: flex;
+    }
+    .iconos-footer:hover{
+        color: var(--verde-fuerte);
+    }
+}
