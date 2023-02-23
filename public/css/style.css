@@ -64,7 +64,7 @@ header{
 }
 .listas{
     list-style: none;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
 }
 .burger-menu{
