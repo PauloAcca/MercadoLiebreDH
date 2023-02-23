@@ -143,13 +143,12 @@ main{
     position: relative;
     right: -217px;
     top: 21px;
+    transition: transform 450ms;
 }
 .camionLogo i{
     color: var(--verde-fuerte);
 }
-.camionLogo:hover{
-    transform: rotateZ(270deg);
-}
+
 .nombreProducto{
     font-size:medium;
     font-style:inherit;
@@ -235,6 +234,9 @@ footer{
     }
     .tarjeta-producto:hover .container-nombreProd{
         display: block;
+    }
+    .tarjeta-producto:hover .camionLogo{
+        transform: rotateZ(270deg);
     }
     .container-footer{
         display: flex;
