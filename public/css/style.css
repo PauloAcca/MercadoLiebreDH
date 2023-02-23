@@ -56,7 +56,7 @@ header{
 }
 .container-listas{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .listas li a{
     text-decoration: none;
