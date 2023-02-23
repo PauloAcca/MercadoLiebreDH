@@ -68,6 +68,7 @@ header{
 .listas{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .burger-menu{
     text-align: center;
