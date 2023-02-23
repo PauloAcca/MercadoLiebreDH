@@ -9,7 +9,6 @@
     --gris-claro: #ebebeb;
     --verde-fuerte: #39b54a;
 }
-
 /* ------------- HEADER */
 header{
     background-color: #EAC926;
@@ -66,6 +65,7 @@ header{
 .listas{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .burger-menu{
     text-align: center;
@@ -106,6 +106,7 @@ main{
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
+
 .descripcion{
     border-top: var(--gris-claro) solid 1px;
     padding-top: 15px;
@@ -202,12 +203,12 @@ footer{
     .tarjeta-producto:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .container-nombreProd{
+    /* .container-nombreProd{
         opacity: 0;
     }
     .container-nombreProd:hover{
         opacity: 1;
-    }
+    } */
     .burger-menu{
         display: none;
     }
@@ -223,11 +224,17 @@ footer{
     .burger-menu{
         display: none;
     }
-    .container-nombreProd{
+    /* .container-nombreProd{
         opacity: 0;
     }
     .container-nombreProd:hover{
         opacity: 1;
+    } */
+    .container-nombreProd{
+        display: none;
+    }
+    .tarjeta-producto:hover .container-nombreProd{
+        display: block;
     }
     .container-footer{
         display: flex;
